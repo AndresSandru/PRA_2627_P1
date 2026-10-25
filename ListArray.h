@@ -86,11 +86,11 @@ class ListArray : public List<T> {
 		return arr[pos];
 	}
 
-	void append(T e){
+	void append(T e) override{
 		insert(n,e);
 	}
 
-	void prepend(T e){
+	void prepend(T e) override{
 		insert(0,e);
 	}
 
@@ -114,4 +114,4 @@ class ListArray : public List<T> {
 	
     
 };
-#endif
+
